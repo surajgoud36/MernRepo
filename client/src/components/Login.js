@@ -14,7 +14,7 @@ function Login() {
   let navigate=useNavigate();
 
   const loginUser=()=>{
-    Axios.post("http://localhost:9000/loginUser", {
+    Axios.post("http://18.212.160.69:9000/loginUser", {
       username,
       password,
     }).then((response)=>{
