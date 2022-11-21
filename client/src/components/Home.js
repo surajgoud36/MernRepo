@@ -19,7 +19,7 @@ function Home() {
             navigate("/Login");
         }
         if(localStorage.getItem("token")){
-            Axios.get(`http://localhost:9000/testUser/${localStorage.getItem("token")}`).then((response)=>{
+            Axios.get(`http://18.212.160.69:9000/testUser/${localStorage.getItem("token")}`).then((response)=>{
             console.log(response.data.name);
             setRecord(response.data);
             setName(response.data.name);
@@ -32,7 +32,7 @@ function Home() {
      //console.log(localStorage.getItem("token"));
     },[]);
     const updateUser=()=>{
-        Axios.put(`http://localhost:9000/updateUser/${localStorage.getItem("token")}`,{
+        Axios.put(`http://18.212.160.69:9000/updateUser/${localStorage.getItem("token")}`,{
             name,
             bio,
             username,
