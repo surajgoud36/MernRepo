@@ -15,7 +15,7 @@ function Signup() {
   const [bio,setBio]=useState(" ");
   const navigate=useNavigate();
   const createUser=()=>{
-    Axios.post(`http://localhost:9000/createUser`,{
+    Axios.post(`http://18.212.160.69:9000/createUser`,{
       name,
       bio,
       username,
