@@ -13,7 +13,7 @@ function Nhome() {
   const [test,setTest]=useState("yu");
   const useq=localStorage.getItem("token");
   useEffect(()=>{
-      Axios.get("http://localhost:9000/getUsers").then((response)=>{
+      Axios.get("http://18.212.160.69:9000/getUsers").then((response)=>{
         setListOfUsers(response.data);
         //setTest(response.data);
         //console.log("hi");
